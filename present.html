@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>KISSA official website</title>
+		<meta name="description" content="自家焙煎したこだわりのコーヒーと、思わず長居したくなるような居心地のいい空間を提供するカフェ「KISSA」のウェブサイトです。">
+		<meta name="viewport" content="width=device-width">
+		<link href="./css/style.css" rel="stylesheet">
+		<link href="./css/access.css" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<header class="header">
+			<div class="header-inner">
+				<a class="header-logo" href="./index.html">
+					<img src="./img/logo-header.png" alt="KISSA">
+				</a>
+				<button class="toggle-menu-button"></button>
+				<nav class="site-menu">
+          <ul>
+            <li class="site-menu-item"><a href="./concept.html">CONCEPT</a></li>
+            <li class="site-menu-item"><a href="./menu.html">MENU</a></li>
+            <li class="site-menu-item"><a href="./shop.html">SHOP</a></li>
+            <li class="site-menu-item"><a href="./access.html">ACCESS</a></li>
+            <li class="site-menu-item"><a href="./blog.html">BLOG</a></li>
+            <li class="site-menu-item"><a href="./present.html">PRESENT</a></li>
+          </ul>
+        </nav>
+			</div>
+		</header>
+		<main class="main">
+			<div class="contact">
+				<h2>応募フォーム</h2>
+				<form action="mailto:foo@xxx.yyy.zzz?subject=TEST_MAIL">
+					<dl class="form-area">
+						<dt><span class="required">お名前</span></dt>
+						<dd><input class="input-text" type="text" name="name" required></dd>
+						<dt><span class="required">メールアドレス</span></dt>
+						<dd><input class="input-text" type="email" name="email" required></dd>
+						<dt>お電話番号</dt>
+						<dd><input class="input-text" type="tel" name="tel"></dd>
+						<dt>希望される商品</dt>
+						<dd>
+							<select class="select-box" name="genre">
+								<option value="食事券500円分" selected>食事券500円分</option>
+								<option value="ドリンク300円引き券">ドリンク300円引き券</option>
+								<option value="オンラインショップで使えるクーポン券1000円分">オンラインショップで使えるクーポン券1000円分</option>
+							</select>
+						</dd>
+						<dt>当店をどちらでお知りになりましたか</dt>
+						<dd>
+							<label class="radio-button"><input type="radio" name="user-type" value="インターネット" checked>インターネット</label>
+							<label class="radio-button"><input type="radio" name="user-type" value="お知り合いからの口コミ">お知り合いからの口コミ</label>
+              <label class="radio-button"><input type="radio" name="user-type" value="当店のチラシ">当店のチラシ</label>
+							<label class="radio-button"><input type="radio" name="user-type" value="その他">その他</label>
+						</dd>
+            <dt>どちらが一番お気に召されましたか</dt>
+						<dd>
+							<label class="radio-button"><input type="radio" name="user-type" value="お飲み物" checked>お飲み物</label>
+							<label class="radio-button"><input type="radio" name="user-type" value="お食事">お食事</label>
+              <label class="radio-button"><input type="radio" name="user-type" value="オンラインショップ">オンラインショップ</label>
+							<label class="radio-button"><input type="radio" name="user-type" value="その他">その他</label>
+						</dd>
+						<dt><span>その他、当店に対するご感想やご要望がありましたらご記入ください</span></dt>
+						<dd><textarea class="message" name="message" required></textarea></dd>
+					</dl>
+				</form>
+				<p class="confirm-text">ご入力内容をご確認の上、お間違いがなければ[Submit]ボタンを押してください。</p>
+				<button class="submit-button" type="submit">Submit</button>
+			</div>
+		</main>
+		<footer class="footer">
+			<nav class="site-menu">
+				<ul>
+					<li><a href="./concept.html">CONCEPT</a></li>
+					<li><a href="./menu.html">MENU</a></li>
+					<li><a href="./shop.html">SHOP</a></li>
+					<li><a href="./access.html">ACCESS</a></li>
+          <li><a href="./blog.html">BLOG</a></li>
+          <li><a href="./present.html">PRESENT</a></li>
+				</ul>
+			</nav>
+			<a class="footer-logo" href="./index.html">
+				<img src="./img/logo-footer.png" alt="KISSA">
+			</a>
+			<p class="footer-tel">TEL 01-2345-6789</p>
+			<p class="footer-time">OPEN Fri-Sun 11:00-16:00</p>
+			<p class="copyright"><small>&copy;Kissa</small></p>
+		</footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+      $(function(){
+        $(".toggle-menu-button").on("click", function(){
+          $(".site-menu").toggleClass("show")
+        })
+      })
+    </script>
+	</body>
+</html>

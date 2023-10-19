@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>ONLINE SHOP|KISSA official website</title>
+		<meta name="description" content="カフェ「KISSA」のスタッフが厳選した、園芸用品のオンラインショップのページです。">
+		<meta name="viewport" content="width=device-width">
+		<link href="./css/style.css" rel="stylesheet">
+		<link href="./css/shop.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/blog.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<header class="header">
+			<div class="header-inner">
+				<a class="header-logo" href="./index.html">
+					<img src="./img/logo-header.png" alt="KISSA">
+				</a>
+				<button class="toggle-menu-button"></button>
+				<nav class="site-menu">
+          <ul>
+            <li class="site-menu-item"><a href="./concept.html">CONCEPT</a></li>
+            <li class="site-menu-item"><a href="./menu.html">MENU</a></li>
+            <li class="site-menu-item"><a href="./shop.html">SHOP</a></li>
+            <li class="site-menu-item"><a href="./access.html">ACCESS</a></li>
+            <li class="site-menu-item"><a href="./blog.html">BLOG</a></li>
+            <li class="site-menu-item"><a href="./present.html">PRESENT</a></li>
+          </ul>
+        </nav>
+			</div>
+		</header>
+		<main class="main">
+			<div class="title">
+				<h1>BLOG</h1>
+			</div>
+			<div class="shop-contents">
+				<div class="shop-item">
+					<div class="item-group">
+						<h2>10月17日</h2>
+						<p>既存のjsファイルからjQueryへの移行完了</p>
+					</div>
+          <div class="item-group">
+						<h2>12月16日</h2>
+						<p>普段何気なく見ているサイト内のグーグルマップが埋め込みによってサイトに
+               入れられているのだと知って驚いた。
+            </p>
+					</div>
+				</div>
+				<aside class="shop-menu">
+					<div class="shop-menu-inner">
+						<h2>ITEM LIST</h2>
+						<ul>
+							<li><a href ="#">12月16日</a></li>
+							<li><a href ="#">12月23日</a></li>
+						</ul>
+					</div>
+				</aside>
+			</div>
+		</main>
+		<footer class="footer">
+			<nav class="site-menu">
+				<ul>
+					<li><a href="./concept.html">CONCEPT</a></li>
+					<li><a href="./menu.html">MENU</a></li>
+					<li><a href="./shop.html">SHOP</a></li>
+					<li><a href="./access.html">ACCESS</a></li>
+          <li><a href="./blog.html">BLOG</a></li>
+          <li><a href="./present.html">PRESENT</a></li>
+				</ul>
+			</nav>
+			<a class="footer-logo" href="./index.html">
+				<img src="./img/logo-footer.png" alt="KISSA">
+			</a>
+			<p class="footer-tel">TEL 01-2345-6789</p>
+			<p class="footer-time">OPEN Fri-Sun 11:00-16:00</p>
+			<p class="copyright"><small>&copy;Kissa</small></p>
+		</footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+      $(function(){
+        $(".toggle-menu-button").on("click", function(){
+          $(".site-menu").toggleClass("show")
+        })
+      })
+    </script>
+	</body>
+</html>
